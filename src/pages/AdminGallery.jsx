@@ -83,10 +83,10 @@ const AdminGalleryPage = (props) => {
     // HANDLE SESSION BANNER IMAGE
     const handleSubmitGalleryBannerImg = (e) => {
         e.preventDefault();
-        axios.put(baseUrl + '/api/gallerybannerimg/64066082c580e625b8639818', { galleryBannerImg })
+        axios.put(baseUrl + '/api/gallerybannerimg/640cedcfbf0f41fdc08d4010', { galleryBannerImg })
             .then(res => {
                 console.log(res)
-                axios.put(baseUrl + '/api/gallerybannervidorimg/64066155e628c7b9b066dee5', { galleryBannerVidOrImg })
+                axios.put(baseUrl + '/api/gallerybannervidorimg/640cee22bf0f41fdc08d4044', { galleryBannerVidOrImg })
                     .then(res => {
                         console.log(res)
                     })
@@ -104,10 +104,10 @@ const AdminGalleryPage = (props) => {
     // HANDLE SESSION BANNER VIDEO
     const handleSubmitGalleryBannerVid = (e) => {
         e.preventDefault();
-        axios.put(baseUrl + '/api/gallerybannervid/64066145e628c7b9b066dee3', { galleryBannerVid })
+        axios.put(baseUrl + '/api/gallerybannervid/640cee61bf0f41fdc08d4078', { galleryBannerVid })
             .then(res => {
                 console.log(res)
-                axios.put(baseUrl + '/api/gallerybannervidorimg/64066155e628c7b9b066dee5', { galleryBannerVidOrImg })
+                axios.put(baseUrl + '/api/gallerybannervidorimg/640cee22bf0f41fdc08d4044', { galleryBannerVidOrImg })
                     .then(res => {
                         console.log(res)
                     })

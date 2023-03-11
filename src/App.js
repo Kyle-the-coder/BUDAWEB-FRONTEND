@@ -139,7 +139,7 @@ function App() {
   useEffect(() => {
 
     // ABOUT ME INFO
-    axios.get(baseUrl + "/api/budaaboutme/63fd525b3abd1fa6fcfc4c20")
+    axios.get(baseUrl + "/api/budaaboutme/640cd666bf0f41fdc08d354c")
       .then(res => {
         setAboutMe(res.data.aboutMe)
       })
@@ -148,7 +148,7 @@ function App() {
       })
 
     // ABOUT BUDA INFO
-    axios.get(baseUrl + "/api/budaaboutbuda/63fd53b2de8ca70c9270d386")
+    axios.get(baseUrl + "/api/budaaboutbuda/640cdf28bf0f41fdc08d384b")
       .then(res => {
         setAboutBuda(res.data.aboutBuda)
       })
@@ -157,7 +157,7 @@ function App() {
       })
 
     // RATES PRICING
-    axios.get(baseUrl + "/api/budarates/63fd6216a5f556178ab5ed83")
+    axios.get(baseUrl + "/api/budarates/640ce8afbf0f41fdc08d3d71")
       .then(res => {
         setRate1(res.data.rate1)
         setRate2(res.data.rate2)
@@ -167,7 +167,7 @@ function App() {
       })
 
     // RATES INFO 
-    axios.get(baseUrl + "/api/budaratesinfo/63fe42dec9fe2eb7d79b0988")
+    axios.get(baseUrl + "/api/budaratesinfo/640cea5abf0f41fdc08d3e0e")
       .then(res => {
         setIncludes(res.data.includes)
       })
@@ -176,7 +176,7 @@ function App() {
       })
 
     //DROP IN PRICE
-    axios.get(baseUrl + "/api/budadropin/63fe4a37bb1ada7084a4b897")
+    axios.get(baseUrl + "/api/budadropin/640ce79abf0f41fdc08d3d3c")
       .then(res => {
         setDropIn(res.data.dropIn)
       })
@@ -185,7 +185,7 @@ function App() {
       })
 
     //SUMMER INFO
-    axios.get(baseUrl + "/api/budasummerinfo/63fe5383578d73e2dc2a012b")
+    axios.get(baseUrl + "/api/budasummerinfo/640cebaebf0f41fdc08d3e78")
       .then(res => {
         setSummerTitle(res.data.summerTitle)
         setSummerContent(res.data.summerContent)
@@ -196,7 +196,7 @@ function App() {
       })
 
     //SESSION INFO
-    axios.get(baseUrl + "/api/budasessioninfo/640b7444a4e078342704c59b")
+    axios.get(baseUrl + "/api/budasessioninfo/640ceaeebf0f41fdc08d3e43")
       .then(res => {
         setSessionTitle(res.data.sessionTitle)
         setSessionIntro(res.data.sessionIntro)
@@ -219,7 +219,7 @@ function App() {
         console.log(err)
       })
     //BUDA CREW INFO
-    axios.get(baseUrl + "/api/budacrewinfo/63ffcc5778b0d2ecd592bcce")
+    axios.get(baseUrl + "/api/budacrewinfo/640ce326bf0f41fdc08d3c03")
       .then(res => {
         setSession1Date(res.data.session1Date)
         setSession1Tuition(res.data.session1Tuition)
@@ -241,7 +241,7 @@ function App() {
       })
 
     //BUDA CREW MEMBER INFO
-    axios.get(baseUrl + "/api/budacrewmemberinfo/640036108a05725938a87006")
+    axios.get(baseUrl + "/api/budacrewmemberinfo/640ce52cbf0f41fdc08d3c9a")
       .then(res => {
         setMemberTitle(res.data.memberTitle)
         setUpcomingEventsInfo(res.data.upcomingEventsInfo)
@@ -256,7 +256,7 @@ function App() {
       })
 
     //ABOUT ME IMAGE BASE64
-    axios.get(baseUrl + '/api/aboutmeimage/64027ad06b1988b83080eb7f')
+    axios.get(baseUrl + '/api/aboutmeimage/640cde28bf0f41fdc08d3786')
       .then(res => {
         setAboutMeImage(res.data.aboutMeImage)
       })
@@ -265,7 +265,7 @@ function App() {
       })
 
     //ABOUT BUDA IMAGE BASE64
-    axios.get(baseUrl + '/api/aboutbudaimage/6402a78b452c5a04826234ca')
+    axios.get(baseUrl + '/api/aboutbudaimage/640cdb37bf0f41fdc08d361a')
       .then(res => {
         setAboutBudaImage(res.data.aboutBudaImage)
       })
@@ -274,7 +274,7 @@ function App() {
       })
 
     //ABOUT INFO BANNER IMAGE BASE64
-    axios.get(baseUrl + '/api/aboutinfobanner/6403c5642309f12867c2f6c1')
+    axios.get(baseUrl + '/api/aboutinfobanner/640cdd25bf0f41fdc08d36ba')
       .then(res => {
         setAboutInfoBannerImg(res.data.aboutInfoBannerImg)
       })
@@ -283,7 +283,7 @@ function App() {
       })
 
     //ABOUT INFO BANNER VIDEO BASE64
-    axios.get(baseUrl + '/api/aboutinfobannervid/6403c81b58556ea0422468ab')
+    axios.get(baseUrl + '/api/aboutinfobannervid/640cdd8bbf0f41fdc08d36ee')
       .then(res => {
         setAboutInfoBannerVid(res.data.aboutInfoBannerVid)
       })
@@ -292,7 +292,7 @@ function App() {
       })
 
     //ABOUT BANNER VIDEO OR IMAGE TRACKER
-    axios.get(baseUrl + '/api/aboutbannervidorimg/6403cac55b9ed745d8260490')
+    axios.get(baseUrl + '/api/aboutbannervidorimg/640cda27bf0f41fdc08d35e6')
       .then(res => {
         setAboutBannerVidOrImg(res.data.aboutBannerVidOrImg)
       })
@@ -301,7 +301,7 @@ function App() {
       })
 
     //BUDA RATES BANNER IMAGE BASE64
-    axios.get(baseUrl + '/api/budaratesbanner/6403ac41050d9afc0eac3c3e')
+    axios.get(baseUrl + '/api/budaratesbanner/640ce925bf0f41fdc08d3da6')
       .then(res => {
         setBudaRatesBannerImage(res.data.budaRatesBannerImage)
       })
@@ -309,7 +309,7 @@ function App() {
         console.log(err)
       })
     //BUDA RATES BANNER VIDEO BASE64
-    axios.get(baseUrl + '/api/budaratesbannervideo/6403ae7c72725433143e5f1f')
+    axios.get(baseUrl + '/api/budaratesbannervideo/640ce981bf0f41fdc08d3dda')
       .then(res => {
         setBudaRatesBannerVideo(res.data.budaRatesBannerVideo)
       })
@@ -317,7 +317,7 @@ function App() {
         console.log(err)
       })
     //RATES BANNER VIDEO OR IMAGE TRACKER
-    axios.get(baseUrl + '/api/ratesbannervidorimg/6403b80f9ec53042773d7450')
+    axios.get(baseUrl + '/api/ratesbannervidorimg/640d012bbf0f41fdc08d5220')
       .then(res => {
         setRatesBannerVidOrImg(res.data.ratesBannerVidOrImg)
       })
@@ -326,7 +326,7 @@ function App() {
       })
 
     //SUMMER BANNER IMAGE
-    axios.get(baseUrl + '/api/summerbannerimg/6404e45fe889de2a637a05f7')
+    axios.get(baseUrl + '/api/summerbannerimg/640cfc1bbf0f41fdc08d4ce2')
       .then(res => {
         setSummerBannerImg(res.data.summerBannerImg)
       })
@@ -335,7 +335,7 @@ function App() {
       })
 
     //SUMMER BANNER VIDEO
-    axios.get(baseUrl + '/api/summerbannervid/6404e6c383edfcb691afce47')
+    axios.get(baseUrl + '/api/summerbannervid/640cfc9cbf0f41fdc08d4d4c')
       .then(res => {
         setSummerBannerVid(res.data.summerBannerVid)
       })
@@ -343,7 +343,7 @@ function App() {
         console.log(err)
       })
     //SUMMER BANNER VIDEO OR IMAGE TRACKER
-    axios.get(baseUrl + '/api/summerbannervidorimg/6404e858e50d41ae5e663a30')
+    axios.get(baseUrl + '/api/summerbannervidorimg/640cfc65bf0f41fdc08d4d18')
       .then(res => {
         setSummerBannerVidOrImg(res.data.summerBannerVidOrImg)
       })
@@ -352,7 +352,7 @@ function App() {
       })
 
     //SUMMER MAIN IMAGE 
-    axios.get(baseUrl + '/api/summermainimg/6408eb04ebee3285b5743758')
+    axios.get(baseUrl + '/api/summermainimg/640cfda0bf0f41fdc08d4eea')
       .then(res => {
         setSummerMainImg(res.data.summerMainImg)
       })
@@ -360,7 +360,7 @@ function App() {
         console.log(err)
       })
     //SUMMER IMAGE 2  
-    axios.get(baseUrl + '/api/summerimg2/6408eb18ebee3285b574375b')
+    axios.get(baseUrl + '/api/summerimg2/640cfd0bbf0f41fdc08d4e1f')
       .then(res => {
         setSummerImg2(res.data.summerImg2)
       })
@@ -368,7 +368,7 @@ function App() {
         console.log(err)
       })
     //SUMMER IMAGE 3
-    axios.get(baseUrl + '/api/summerimg3/6408eb24ebee3285b574375e')
+    axios.get(baseUrl + '/api/summerimg3/640cfd55bf0f41fdc08d4eb5')
       .then(res => {
         setSummerImg3(res.data.summerImg3)
       })
@@ -378,7 +378,7 @@ function App() {
 
 
     //SESSION BANNER IMAGE 
-    axios.get(baseUrl + '/api/sessionbannerimg/64062b1c7a2c450f34c661e9')
+    axios.get(baseUrl + '/api/sessionbannerimg/640cf7acbf0f41fdc08d45ef')
       .then(res => {
         setSessionBannerImg(res.data.sessionBannerImg)
       })
@@ -386,7 +386,7 @@ function App() {
         console.log(err)
       })
     //SESSION BANNER VIDEO 
-    axios.get(baseUrl + '/api/sessionbannervid/64062b367a2c450f34c661ec')
+    axios.get(baseUrl + '/api/sessionbannervid/640cf819bf0f41fdc08d4656')
       .then(res => {
         setSessionBannerVid(res.data.sessionBannerVid)
       })
@@ -394,7 +394,7 @@ function App() {
         console.log(err)
       })
     //SESSION BANNER VIDEO OR IMAGE TRACKER
-    axios.get(baseUrl + '/api/sessionbannervidorimg/64062b477a2c450f34c661ee')
+    axios.get(baseUrl + '/api/sessionbannervidorimg/640cf7e9bf0f41fdc08d4621')
       .then(res => {
         setSessionBannerVidOrImg(res.data.sessionBannerVidOrImg)
       })
@@ -402,7 +402,7 @@ function App() {
         console.log(err)
       })
     //SESSION MAIN IMAGE 
-    axios.get(baseUrl + '/api/sessionmainimg/6408f4688052cc6be08ed98a')
+    axios.get(baseUrl + '/api/sessionmainimg/640cfbb9bf0f41fdc08d4bec')
       .then(res => {
         setSessionMainImg(res.data.sessionMainImg)
       })
@@ -410,7 +410,7 @@ function App() {
         console.log(err)
       })
     //SESSION IMAGE 2 
-    axios.get(baseUrl + '/api/sessionimg2/6408f4778052cc6be08ed98c')
+    axios.get(baseUrl + '/api/sessionimg2/640cfacebf0f41fdc08d49fe')
       .then(res => {
         setSessionImg2(res.data.sessionImg2)
       })
@@ -418,7 +418,7 @@ function App() {
         console.log(err)
       })
     //SESSION IMAGE 3 
-    axios.get(baseUrl + '/api/sessionimg3/6408f47f8052cc6be08ed98e')
+    axios.get(baseUrl + '/api/sessionimg3/640cfb4bbf0f41fdc08d4af6')
       .then(res => {
         setSessionImg3(res.data.sessionImg3)
       })
@@ -427,7 +427,7 @@ function App() {
       })
 
     //GALLERY BANNER IMAGE 
-    axios.get(baseUrl + '/api/gallerybannerimg/64066082c580e625b8639818')
+    axios.get(baseUrl + '/api/gallerybannerimg/640cedcfbf0f41fdc08d4010')
       .then(res => {
         setGalleryBannerImg(res.data.galleryBannerImg)
       })
@@ -436,7 +436,7 @@ function App() {
       })
 
     //GALLERY BANNER VIDEO
-    axios.get(baseUrl + '/api/gallerybannervid/64066145e628c7b9b066dee3')
+    axios.get(baseUrl + '/api/gallerybannervid/640cee61bf0f41fdc08d4078')
       .then(res => {
         setGalleryBannerVid(res.data.galleryBannerVid)
       })
@@ -445,7 +445,7 @@ function App() {
       })
 
     //GALLERY BANNER VIDEO OR IMAGE TRACKER
-    axios.get(baseUrl + '/api/gallerybannervidorimg/64066155e628c7b9b066dee5')
+    axios.get(baseUrl + '/api/gallerybannervidorimg/640cee22bf0f41fdc08d4044')
       .then(res => {
         setGalleryBannerVidOrImg(res.data.galleryBannerVidOrImg)
       })
@@ -454,7 +454,7 @@ function App() {
       })
 
     //CREW BANNER IMAGE 
-    axios.get(baseUrl + '/api/crewbannerimg/640671eb024ae5b9309208ab')
+    axios.get(baseUrl + '/api/crewbannerimg/640cec12bf0f41fdc08d3ead')
       .then(res => {
         setCrewBannerImg(res.data.crewBannerImg)
       })
@@ -462,7 +462,7 @@ function App() {
         console.log(err)
       })
     //CREW BANNER VIDEO 
-    axios.get(baseUrl + '/api/crewbannervid/640671f8024ae5b9309208ad')
+    axios.get(baseUrl + '/api/crewbannervid/640ceca9bf0f41fdc08d3f15')
       .then(res => {
         setCrewBannerVid(res.data.crewBannerVid)
       })
@@ -470,7 +470,7 @@ function App() {
         console.log(err)
       })
     //CREW BANNER VIDEO OR IMAGE TRACKER
-    axios.get(baseUrl + '/api/crewbannervidorimg/64067203024ae5b9309208af')
+    axios.get(baseUrl + '/api/crewbannervidorimg/640cec62bf0f41fdc08d3ee1')
       .then(res => {
         setCrewBannerVidOrImg(res.data.crewBannerVidOrImg)
       })
@@ -480,7 +480,7 @@ function App() {
 
 
     //MEMBER BANNER IMAGE 
-    axios.get(baseUrl + '/api/memberbannerimg/64079bd924657d47be763a70')
+    axios.get(baseUrl + '/api/memberbannerimg/640cf60bbf0f41fdc08d447c')
       .then(res => {
         setMemberBannerImg(res.data.memberBannerImg)
       })
@@ -488,7 +488,7 @@ function App() {
         console.log(err)
       })
     //MEMBER BANNER VIDEO
-    axios.get(baseUrl + '/api/memberbannervid/64079be224657d47be763a72')
+    axios.get(baseUrl + '/api/memberbannervid/640cf6a7bf0f41fdc08d44b4')
       .then(res => {
         setMemberBannerVid(res.data.memberBannerVid)
       })
@@ -496,7 +496,7 @@ function App() {
         console.log(err)
       })
     //MEMBER BANNER VIDEO OR IMAGE TRACKER 
-    axios.get(baseUrl + '/api/memberbannervidorimg/64079bee24657d47be763a74')
+    axios.get(baseUrl + '/api/memberbannervidorimg/640cf65cbf0f41fdc08d4480')
       .then(res => {
         setMemberBannerVidOrImg(res.data.memberBannerVidOrImg)
       })
@@ -505,7 +505,7 @@ function App() {
       })
 
     //LANDING PAGE MAIN IMG
-    axios.get(baseUrl + '/api/landingpagemainimg/6407e14c0664c1b35c2630da')
+    axios.get(baseUrl + '/api/landingpagemainimg/640cd5e0bf0f41fdc08d354a')
       .then(res => {
         setLandingPageMainImg(res.data.landingPageMainImg)
       })
@@ -513,7 +513,7 @@ function App() {
         console.log(err)
       })
     //LANDING PAGE CARD 1
-    axios.get(baseUrl + '/api/landingpagecard1/6407e1640664c1b35c2630dd')
+    axios.get(baseUrl + '/api/landingpagecard1/640cf01fbf0f41fdc08d40cd')
       .then(res => {
         setLandingPageCard1(res.data.landingPageCard1)
       })
@@ -521,7 +521,7 @@ function App() {
         console.log(err)
       })
     //LANDING PAGE CARD 2
-    axios.get(baseUrl + '/api/landingpagecard2/6407e1710664c1b35c2630e0')
+    axios.get(baseUrl + '/api/landingpagecard2/640cf090bf0f41fdc08d4163')
       .then(res => {
         setLandingPageCard2(res.data.landingPageCard2)
       })
@@ -529,7 +529,7 @@ function App() {
         console.log(err)
       })
     //LANDING PAGE CARD 3
-    axios.get(baseUrl + '/api/landingpagecard3/6407e17d0664c1b35c2630e3')
+    axios.get(baseUrl + '/api/landingpagecard3/640cf0d0bf0f41fdc08d4198')
       .then(res => {
         setLandingPageCard3(res.data.landingPageCard3)
       })
@@ -537,7 +537,7 @@ function App() {
         console.log(err)
       })
     //LANDING PAGE VID 1
-    axios.get(baseUrl + '/api/landingpagevid1/6407e18e0664c1b35c2630e6')
+    axios.get(baseUrl + '/api/landingpagevid1/640cf143bf0f41fdc08d422e')
       .then(res => {
         setLandingPageVid1(res.data.landingPageVid1)
       })
@@ -545,7 +545,7 @@ function App() {
         console.log(err)
       })
     //LANDING PAGE VID 2 
-    axios.get(baseUrl + '/api/landingpagevid2/6407e1960664c1b35c2630e8')
+    axios.get(baseUrl + '/api/landingpagevid2/640cf1edbf0f41fdc08d4386')
       .then(res => {
         setLandingPageVid2(res.data.landingPageVid2)
       })
@@ -555,7 +555,7 @@ function App() {
 
 
     //MEMBER IMG
-    axios.get(baseUrl + '/api/memberImg/6409506ad7e82977ba97852e')
+    axios.get(baseUrl + '/api/memberimg/640cf736bf0f41fdc08d4553')
       .then(res => {
         setMemberImg(res.data.memberImg)
       })
@@ -563,7 +563,7 @@ function App() {
         console.log(err)
       })
     //BUDA CREW IMG
-    axios.get(baseUrl + '/api/budacrewimg/640954b6ee04f09798d82b26')
+    axios.get(baseUrl + '/api/budacrewimg/640ce1b8bf0f41fdc08d3b69')
       .then(res => {
         setBudaCrewImg(res.data.budaCrewImg)
       })
@@ -590,6 +590,7 @@ function App() {
       })
 
   }, [])
+  console.log(memberBannerVidOrImg)
   return (
     <div className="App">
       {!tracker ? <BudaNavbar /> : <AdminNavbar />}

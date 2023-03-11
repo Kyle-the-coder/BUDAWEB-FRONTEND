@@ -39,12 +39,15 @@ const BudaCrewMemberPage = (props) => {
             .catch(err => {
                 console.log(err)
             })
+
+            console.log(memberBannerVidOrImg)
     }, [])
 
     const logout = () => {
         setMemberLogin("does not enter")
         navigate("/")
     }
+    console.log(memberBannerVidOrImg)
     return (
         <div>
 

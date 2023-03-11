@@ -42,7 +42,7 @@ const AdminLandingPage = (props) => {
     //LANDING PAGE MAIN IMAGE FORM
     const handleLandingPageMainImg = (e) => {
         e.preventDefault()
-        axios.put(baseUrl + '/api/landingpagemainimg/6407e14c0664c1b35c2630da', { landingPageMainImg })
+        axios.put(baseUrl + '/api/landingpagemainimg/640cd5e0bf0f41fdc08d354a', { landingPageMainImg })
             .then(res => {
                 console.log(res.data)
                 setLpMainImgEdited(true)
@@ -56,7 +56,7 @@ const AdminLandingPage = (props) => {
     //LANDING PAGE CARD 1 FORM
     const handleLandingPageCard1 = (e) => {
         e.preventDefault()
-        axios.put(baseUrl + '/api/landingpagecard1/6407e1640664c1b35c2630dd', { landingPageCard1 })
+        axios.put(baseUrl + '/api/landingpagecard1/640cf01fbf0f41fdc08d40cd', { landingPageCard1 })
             .then(res => {
                 console.log(res.data)
                 setlpCard1Edited(true)
@@ -70,7 +70,7 @@ const AdminLandingPage = (props) => {
     //LANDING PAGE CARD 2 FORM
     const handleLandingPageCard2 = (e) => {
         e.preventDefault()
-        axios.put(baseUrl + '/api/landingpagecard2/6407e1710664c1b35c2630e0', { landingPageCard2 })
+        axios.put(baseUrl + '/api/landingpagecard2/640cf090bf0f41fdc08d4163', { landingPageCard2 })
             .then(res => {
                 console.log(res.data)
                 setlpCard2Edited(true)
@@ -84,7 +84,7 @@ const AdminLandingPage = (props) => {
     //LANDING PAGE CARD 3 FORM
     const handleLandingPageCard3 = (e) => {
         e.preventDefault()
-        axios.put(baseUrl + '/api/landingpagecard3/6407e17d0664c1b35c2630e3', { landingPageCard3 })
+        axios.put(baseUrl + '/api/landingpagecard3/640cf0d0bf0f41fdc08d4198', { landingPageCard3 })
             .then(res => {
                 console.log(res.data)
                 setlpCard3Edited(true)
@@ -98,7 +98,7 @@ const AdminLandingPage = (props) => {
     //LANDING PAGE VID 1 FORM
     const handleLandingPageVid1 = (e) => {
         e.preventDefault()
-        axios.put(baseUrl + '/api/landingpagevid1/6407e18e0664c1b35c2630e6', { landingPageVid1 })
+        axios.put(baseUrl + '/api/landingpagevid1/640cf143bf0f41fdc08d422e', { landingPageVid1 })
             .then(res => {
                 console.log(res.data)
                 setlpVid1Edited(true)
@@ -112,7 +112,7 @@ const AdminLandingPage = (props) => {
     //LANDING PAGE VID 2 FORM
     const handleLandingPageVid2 = (e) => {
         e.preventDefault()
-        axios.put(baseUrl + '/api/landingpagevid2/6407e1960664c1b35c2630e8', { landingPageVid2 })
+        axios.put(baseUrl + '/api/landingpagevid2/640cf1edbf0f41fdc08d4386', { landingPageVid2 })
             .then(res => {
                 console.log(res.data)
                 setlpVid2Edited(true)

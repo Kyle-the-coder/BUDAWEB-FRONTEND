@@ -37,7 +37,7 @@ const AdminRatesPage = (props) => {
     // HANDLE BUDA RATES
     const handleSubmitBudaRates = (e) => {
         e.preventDefault();
-        axios.put(baseUrl + '/api/budarates/63fd6216a5f556178ab5ed83', { rate1, rate2 })
+        axios.put(baseUrl + '/api/budarates/640ce8afbf0f41fdc08d3d71', { rate1, rate2 })
             .then(res => {
                 console.log(res)
                 setBudaRatesEdited(true)
@@ -52,7 +52,7 @@ const AdminRatesPage = (props) => {
     // HANDLE INCLUDES INFO
     const handleSubmitIncludes = (e) => {
         e.preventDefault();
-        axios.put(baseUrl + '/api/budaratesinfo/63fe42dec9fe2eb7d79b0988', { includes })
+        axios.put(baseUrl + '/api/budaratesinfo/640cea5abf0f41fdc08d3e0e', { includes })
             .then(res => {
                 console.log(res)
                 setBudaRatesInfoEdited(true)
@@ -67,7 +67,7 @@ const AdminRatesPage = (props) => {
     // HANDLE DROP IN PRICE
     const handleSubmitDropIn = (e) => {
         e.preventDefault();
-        axios.put(baseUrl + '/api/budadropin/63fe4a37bb1ada7084a4b897', { dropIn })
+        axios.put(baseUrl + '/api/budadropin/640ce79abf0f41fdc08d3d3c', { dropIn })
             .then(res => {
                 console.log(res)
                 setBudaDropInEdited(true)
@@ -82,7 +82,7 @@ const AdminRatesPage = (props) => {
     //BUDA RATES BANNER IMAGE FORM
     const handleBudaRatesBannerImage = (e) => {
         e.preventDefault()
-        axios.put(baseUrl + '/api/budaratesbanner/6403ac41050d9afc0eac3c3e', { budaRatesBannerImage })
+        axios.put(baseUrl + '/api/budaratesbanner/640ce925bf0f41fdc08d3da6', { budaRatesBannerImage })
             .then(res => {
                 console.log(res.data)
                 setBudaRatesBannerImageEdited(true)
@@ -105,7 +105,7 @@ const AdminRatesPage = (props) => {
     //BUDA RATES BANNER VIDEO FORM
     const handleBudaRatesBannerVideo = (e) => {
         e.preventDefault()
-        axios.put(baseUrl + '/api/budaratesbannervideo/6403ae7c72725433143e5f1f', { budaRatesBannerVideo })
+        axios.put(baseUrl + '/api/budaratesbannervideo/640ce981bf0f41fdc08d3dda', { budaRatesBannerVideo })
             .then(res => {
                 console.log(res.data)
                 setBudaRatesBannerVideoEdited(true)

@@ -53,7 +53,7 @@ const AdminBudaCrewMemberPage = (props) => {
     // HANDLE SESSION INFO
     const handleSubmitBudaCrewInfo = (e) => {
         e.preventDefault();
-        axios.put(baseUrl + '/api/budacrewmemberinfo/640036108a05725938a87006', {
+        axios.put(baseUrl + '/api/budacrewmemberinfo/640ce52cbf0f41fdc08d3c9a', {
             memberTitle, upcomingEventsInfo,
             videoTitle, videoLink,
             homeworkInfo, budaCrewInfo,
@@ -95,7 +95,7 @@ const AdminBudaCrewMemberPage = (props) => {
     // HANDLE MIX INFO
     const handleSubmitBudaCrewMixList = (e) => {
         e.preventDefault();
-        axios.post(baseUrl+'/api/budacrewmusic', { musicLink, musicTitle })
+        axios.post(baseUrl + '/api/budacrewmusic', { musicLink, musicTitle })
             .then(res => {
                 console.log(res)
                 //BUDA CREW MEMBER MUSIC LIST INFO
@@ -117,7 +117,7 @@ const AdminBudaCrewMemberPage = (props) => {
     const handleDeleteOneMusic = (e, id) => {
         e.preventDefault()
         console.log(id)
-        axios.delete(baseUrl+'/api/budacrewmusic/' + id)
+        axios.delete(baseUrl + '/api/budacrewmusic/' + id)
             .then(res => {
                 //BUDA CREW MEMBER MUSIC LIST INFO
                 axios.get(baseUrl + "/api/budacrewmusic")
@@ -138,7 +138,7 @@ const AdminBudaCrewMemberPage = (props) => {
     const handleDeleteOneVideo = (e, id) => {
         e.preventDefault()
         console.log(id)
-        axios.delete(baseUrl+'/api/budacrewvideo/' + id)
+        axios.delete(baseUrl + '/api/budacrewvideo/' + id)
             .then(res => {
                 console.log(res)
                 //BUDA CREW MEMBER VIDEO LIST INFO
@@ -158,10 +158,10 @@ const AdminBudaCrewMemberPage = (props) => {
     // HANDLE MEMBER BANNER IMAGE
     const handleSubmitMemberBannerImg = (e) => {
         e.preventDefault();
-        axios.put(baseUrl+'/api/memberbannerimg/64079bd924657d47be763a70', { memberBannerImg })
+        axios.put(baseUrl + '/api/memberbannerimg/640cf60bbf0f41fdc08d447c', { memberBannerImg })
             .then(res => {
                 console.log(res)
-                axios.put('http://localhost:8000/api/memberbannervidorimg/64079bee24657d47be763a74', { memberBannerVidOrImg })
+                axios.put(baseUrl + 'api/memberbannervidorimg/640cf65cbf0f41fdc08d4480', { memberBannerVidOrImg })
                     .then(res => {
                         console.log(res)
                     })
@@ -179,10 +179,10 @@ const AdminBudaCrewMemberPage = (props) => {
     // HANDLE MEMBER BANNER VIDEO
     const handleSubmitMemberBannerVid = (e) => {
         e.preventDefault();
-        axios.put(baseUrl+'/api/memberbannervid/64079be224657d47be763a72', { memberBannerVid })
+        axios.put(baseUrl + '/api/memberbannervid/640cf6a7bf0f41fdc08d44b4', { memberBannerVid })
             .then(res => {
                 console.log(res)
-                axios.put(baseUrl+'/api/memberbannervidorimg/64079bee24657d47be763a74', { memberBannerVidOrImg })
+                axios.put(baseUrl + 'api/memberbannervidorimg/640cf65cbf0f41fdc08d4480', { memberBannerVidOrImg })
                     .then(res => {
                         console.log(res)
                     })
@@ -201,7 +201,7 @@ const AdminBudaCrewMemberPage = (props) => {
     // HANDLE MEMBER IMG
     const handleMemberImg = (e) => {
         e.preventDefault()
-        axios.put(baseUrl+'/api/memberImg/6409506ad7e82977ba97852e', { memberImg })
+        axios.put(baseUrl + '/api/memberimg/640cf736bf0f41fdc08d4553', { memberImg })
             .then(res => {
                 setMemberImgEdited(true)
                 const time = setTimeout(() => setMemberImgEdited(false), 2100);
@@ -276,7 +276,7 @@ const AdminBudaCrewMemberPage = (props) => {
                         <section className="w-full mb-12">
                             <div className="w-11/12 flex justify-center">
                                 <form className="w-[490px] p-3 flex flex-col items-center  bg-slate-200  border-2 border-black" onSubmit={handleMemberImg}>
-                                    <h1 className="text-2xl mb-8 welcome">Edit your Banner photo here:</h1>
+                                    <h1 className="text-2xl mb-8 welcome">Edit BUDA Crew photo here:</h1>
                                     <FileBase64 multiple={false} onDone={({ base64 }) => setMemberImg(base64)} />
                                     <div className="flex justify-center mt-8">
                                         <button type="submit" className="w-24 py-1 bg-indigo-200 rounded  border-black">Upload</button>
