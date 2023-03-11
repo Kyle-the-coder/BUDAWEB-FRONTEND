@@ -54,7 +54,7 @@ const AdminAboutPage = (props) => {
     const handleSubmitAboutMe = (e) => {
         e.preventDefault();
 
-        axios.put(baseUrl + 'api/budaaboutme/63fd525b3abd1fa6fcfc4c20', { aboutMe })
+        axios.put('http://localhost:8000api/budaaboutme/63fd525b3abd1fa6fcfc4c20', { aboutMe })
             .then(res => {
                 console.log(res)
                 setAboutMeEdited(true)
@@ -69,7 +69,7 @@ const AdminAboutPage = (props) => {
     //ABOUT BUDA FORM
     const handleSubmitAboutBuda = (e) => {
         e.preventDefault();
-        axios.put(baseUrl + 'api/budaaboutbuda/63fd53b2de8ca70c9270d386', { aboutBuda })
+        axios.put('http://localhost:8000api/budaaboutbuda/63fd53b2de8ca70c9270d386', { aboutBuda })
             .then(res => {
                 console.log(res.data)
                 setAboutBudaEdited(true)
@@ -84,7 +84,7 @@ const AdminAboutPage = (props) => {
     //ABOUT ME IMAGE FORM
     const handleAboutMeImg = (e) => {
         e.preventDefault()
-        axios.put(baseUrl + 'api/aboutmeimage/64027ad06b1988b83080eb7f', { aboutMeImage })
+        axios.put('http://localhost:8000api/aboutmeimage/64027ad06b1988b83080eb7f', { aboutMeImage })
             .then(res => {
                 console.log(res.data)
                 setAboutMeImageEdited(true)
@@ -99,7 +99,7 @@ const AdminAboutPage = (props) => {
     //ABOUT BUDA IMAGE FORM
     const handleAboutBudaImg = (e) => {
         e.preventDefault()
-        axios.put(baseUrl + 'api/aboutbudaimage/6402a78b452c5a04826234ca', { aboutBudaImage })
+        axios.put('http://localhost:8000api/aboutbudaimage/6402a78b452c5a04826234ca', { aboutBudaImage })
             .then(res => {
                 console.log(res.data)
                 setAboutBudaImageEdited(true)
@@ -114,7 +114,7 @@ const AdminAboutPage = (props) => {
     //ABOUT INFO BANNER IMAGE FORM
     const handleAboutInfoBannerImg = (e) => {
         e.preventDefault()
-        axios.put(baseUrl + 'api/aboutInfoBanner/6403c5642309f12867c2f6c1', { aboutInfoBannerImg })
+        axios.put('http://localhost:8000api/aboutInfoBanner/6403c5642309f12867c2f6c1', { aboutInfoBannerImg })
             .then(res => {
                 console.log(res.data)
                 axios.put('http://localhost:8000/api/aboutbannervidorimg/6403cac55b9ed745d8260490', { aboutBannerVidOrImg })
@@ -136,10 +136,10 @@ const AdminAboutPage = (props) => {
     //ABOUT INFO BANNER VIDEO FORM
     const handleAboutInfoBannerVid = (e) => {
         e.preventDefault()
-        axios.put(baseUrl + '/api/aboutinfobannervid/6403c81b58556ea0422468ab', { aboutInfoBannerVid })
+        axios.put('http://localhost:8000/api/aboutinfobannervid/6403c81b58556ea0422468ab', { aboutInfoBannerVid })
             .then(res => {
                 console.log(res.data)
-                axios.put(baseUrl+'/api/aboutbannervidorimg/6403cac55b9ed745d8260490', { aboutBannerVidOrImg })
+                axios.put('http://localhost:8000/api/aboutbannervidorimg/6403cac55b9ed745d8260490', { aboutBannerVidOrImg })
                     .then(res => {
                         console.log(res.data)
                     })

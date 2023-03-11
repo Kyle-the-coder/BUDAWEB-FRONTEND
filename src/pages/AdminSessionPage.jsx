@@ -55,7 +55,7 @@ const AdminWinterSpringPage = (props) => {
     // HANDLE SESSION INFO
     const handleSubmitSessionInfo = (e) => {
         e.preventDefault();
-        axios.put(baseUrl+'/api/budasessioninfo/63fea4130c85ca04a51712b0', {
+        axios.put('http://localhost:8000/api/budasessioninfo/63fea4130c85ca04a51712b0', {
             startDate, showDate,
             showLocation, showTech,
             showTitle, showTime,
@@ -78,10 +78,10 @@ const AdminWinterSpringPage = (props) => {
     // HANDLE SESSION BANNER IMAGE
     const handleSubmitSessionBannerImg = (e) => {
         e.preventDefault();
-        axios.put(baseUrl+'/api/sessionbannerimg/64062b1c7a2c450f34c661e9', { sessionBannerImg })
+        axios.put('http://localhost:8000/api/sessionbannerimg/64062b1c7a2c450f34c661e9', { sessionBannerImg })
             .then(res => {
                 console.log(res)
-                axios.put(baseUrl+'/api/sessionbannervidorimg/64062b477a2c450f34c661ee', { sessionBannerVidOrImg })
+                axios.put('http://localhost:8000/api/sessionbannervidorimg/64062b477a2c450f34c661ee', { sessionBannerVidOrImg })
                     .then(res => {
                         console.log(res)
                     })
@@ -99,10 +99,10 @@ const AdminWinterSpringPage = (props) => {
     // HANDLE SESSION BANNER VIDEO
     const handleSubmitSessionBannerVid = (e) => {
         e.preventDefault();
-        axios.put(baseUrl+'/api/sessionbannervid/64062b367a2c450f34c661ec', { sessionBannerVid })
+        axios.put('http://localhost:8000/api/sessionbannervid/64062b367a2c450f34c661ec', { sessionBannerVid })
             .then(res => {
                 console.log(res)
-                axios.put(baseUrl+'/api/sessionbannervidorimg/64062b477a2c450f34c661ee', { sessionBannerVidOrImg })
+                axios.put('http://localhost:8000/api/sessionbannervidorimg/64062b477a2c450f34c661ee', { sessionBannerVidOrImg })
                     .then(res => {
                         console.log(res)
                     })
@@ -121,7 +121,7 @@ const AdminWinterSpringPage = (props) => {
     // HANDLE MAIN IMG 
     const handleSubmitSessionMainImg = (e) => {
         e.preventDefault();
-        axios.put(baseUrl+'/api/sessionmainimg/6408f4688052cc6be08ed98a', { sessionMainImg })
+        axios.put('http://localhost:8000/api/sessionmainimg/6408f4688052cc6be08ed98a', { sessionMainImg })
             .then(res => {
                 setSessionMainImgEdited(true)
                 const time = setTimeout(() => setSessionMainImgEdited(false), 2100);
@@ -134,7 +134,7 @@ const AdminWinterSpringPage = (props) => {
     // HANDLE SESSION IMG 2
     const handleSubmitSessionImg2 = (e) => {
         e.preventDefault();
-        axios.put(baseUrl+'/api/sessionimg2/6408f4778052cc6be08ed98c', { sessionImg2 })
+        axios.put('http://localhost:8000/api/sessionimg2/6408f4778052cc6be08ed98c', { sessionImg2 })
             .then(res => {
                 setSessionImg2Edited(true)
                 const time = setTimeout(() => setSessionImg2Edited(false), 2100);
@@ -147,7 +147,7 @@ const AdminWinterSpringPage = (props) => {
     // HANDLE SESSION IMG 3
     const handleSubmitSessionImg3 = (e) => {
         e.preventDefault();
-        axios.put(baseUrl+'/api/sessionimg3/6408f47f8052cc6be08ed98e', { sessionImg3 })
+        axios.put('http://localhost:8000/api/sessionimg3/6408f47f8052cc6be08ed98e', { sessionImg3 })
             .then(res => {
                 setSessionImg3Edited(true)
                 const time = setTimeout(() => setSessionImg3Edited(false), 2100);

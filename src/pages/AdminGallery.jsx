@@ -43,10 +43,10 @@ const AdminGalleryPage = (props) => {
     const handleDeleteOneGalleryVideo = (e, id) => {
         e.preventDefault()
         console.log(id)
-        axios.delete(baseUrl + '/api/galleryVids/' + id)
+        axios.delete('http://localhost:8000/api/galleryVids/' + id)
             .then(res => {
                 console.log(res)
-                axios.get(baseUrl + '/api/galleryvids')
+                axios.get('http://localhost:8000/api/galleryvids')
                     .then(res => {
                         console.log(res)
                         setGalleryVidsList(res.data)
@@ -63,10 +63,10 @@ const AdminGalleryPage = (props) => {
     const handleDeleteOneGalleryImage = (e, id) => {
         e.preventDefault()
         console.log(id)
-        axios.delete(baseUrl + '/api/galleryimgs/' + id)
+        axios.delete('http://localhost:8000/api/galleryimgs/' + id)
             .then(res => {
                 console.log(res)
-                axios.get(baseUrl + '/api/galleryimgs')
+                axios.get('http://localhost:8000/api/galleryimgs')
                     .then(res => {
                         console.log(res)
                         setGalleryImgsList(res.data)
@@ -83,10 +83,10 @@ const AdminGalleryPage = (props) => {
     // HANDLE SESSION BANNER IMAGE
     const handleSubmitGalleryBannerImg = (e) => {
         e.preventDefault();
-        axios.put(baseUrl + '/api/gallerybannerimg/64066082c580e625b8639818', { galleryBannerImg })
+        axios.put('http://localhost:8000/api/gallerybannerimg/64066082c580e625b8639818', { galleryBannerImg })
             .then(res => {
                 console.log(res)
-                axios.put(baseUrl + '/api/gallerybannervidorimg/64066155e628c7b9b066dee5', { galleryBannerVidOrImg })
+                axios.put('http://localhost:8000/api/gallerybannervidorimg/64066155e628c7b9b066dee5', { galleryBannerVidOrImg })
                     .then(res => {
                         console.log(res)
                     })
@@ -104,10 +104,10 @@ const AdminGalleryPage = (props) => {
     // HANDLE SESSION BANNER VIDEO
     const handleSubmitGalleryBannerVid = (e) => {
         e.preventDefault();
-        axios.put(baseUrl + '/api/gallerybannervid/64066145e628c7b9b066dee3', { galleryBannerVid })
+        axios.put('http://localhost:8000/api/gallerybannervid/64066145e628c7b9b066dee3', { galleryBannerVid })
             .then(res => {
                 console.log(res)
-                axios.put(baseUrl + '/api/gallerybannervidorimg/64066155e628c7b9b066dee5', { galleryBannerVidOrImg })
+                axios.put('http://localhost:8000/api/gallerybannervidorimg/64066155e628c7b9b066dee5', { galleryBannerVidOrImg })
                     .then(res => {
                         console.log(res)
                     })
@@ -126,7 +126,7 @@ const AdminGalleryPage = (props) => {
     // HANDLE GALLERY VIDS
     const handleSubmitGalleryVids = (e) => {
         e.preventDefault();
-        axios.post(baseUrl + '/api/galleryvids', { galleryVids })
+        axios.post('http://localhost:8000/api/galleryvids', { galleryVids })
             .then(res => {
                 console.log(res)
                 axios.get(baseUrl + '/api/galleryvids')
@@ -153,7 +153,7 @@ const AdminGalleryPage = (props) => {
         axios.post(baseUrl + '/api/galleryimgs', { galleryImgs })
             .then(res => {
                 console.log(res)
-                axios.get(baseUrl + '/api/galleryimgs')
+                axios.get('http://localhost:8000/api/galleryimgs')
                     .then(res => {
                         console.log(res)
                         setGalleryImgsList(res.data)

@@ -138,7 +138,7 @@ function App() {
   useEffect(() => {
 
     // ABOUT ME INFO
-    axios.get(baseUrl + "/api/budaaboutme/63fd525b3abd1fa6fcfc4c20")
+    axios.get("http://localhost:8000/api/budaaboutme/63fd525b3abd1fa6fcfc4c20")
       .then(res => {
         setAboutMe(res.data.aboutMe)
       })
@@ -147,7 +147,7 @@ function App() {
       })
 
     // ABOUT BUDA INFO
-    axios.get(baseUrl + "/api/budaaboutbuda/63fd53b2de8ca70c9270d386")
+    axios.get("http://localhost:8000/api/budaaboutbuda/63fd53b2de8ca70c9270d386")
       .then(res => {
         setAboutBuda(res.data.aboutBuda)
       })
@@ -156,7 +156,7 @@ function App() {
       })
 
     // RATES PRICING
-    axios.get(baseUrl + "/api/budarates/63fd6216a5f556178ab5ed83")
+    axios.get("http://localhost:8000/api/budarates/63fd6216a5f556178ab5ed83")
       .then(res => {
         setRate1(res.data.rate1)
         setRate2(res.data.rate2)
@@ -166,7 +166,7 @@ function App() {
       })
 
     // RATES INFO 
-    axios.get(baseUrl + "/api/budaratesinfo/63fe42dec9fe2eb7d79b0988")
+    axios.get("http://localhost:8000/api/budaratesinfo/63fe42dec9fe2eb7d79b0988")
       .then(res => {
         setIncludes(res.data.includes)
       })
@@ -175,7 +175,7 @@ function App() {
       })
 
     //DROP IN PRICE
-    axios.get(baseUrl + "/api/budadropin/63fe4a37bb1ada7084a4b897")
+    axios.get("http://localhost:8000/api/budadropin/63fe4a37bb1ada7084a4b897")
       .then(res => {
         setDropIn(res.data.dropIn)
       })
@@ -184,7 +184,7 @@ function App() {
       })
 
     //SUMMER INFO
-    axios.get(baseUrl + "/api/budasummerinfo/63fe5383578d73e2dc2a012b")
+    axios.get("http://localhost:8000/api/budasummerinfo/63fe5383578d73e2dc2a012b")
       .then(res => {
         setSummerTitle(res.data.summerTitle)
         setSummerContent(res.data.summerContent)
@@ -195,7 +195,7 @@ function App() {
       })
 
     //SESSION INFO
-    axios.get(baseUrl + "/api/budasessioninfo/640b7444a4e078342704c59b")
+    axios.get("http://localhost:8000/api/budasessioninfo/640b7444a4e078342704c59b")
       .then(res => {
         setSessionTitle(res.data.sessionTitle)
         setSessionIntro(res.data.sessionIntro)
@@ -218,7 +218,7 @@ function App() {
         console.log(err)
       })
     //BUDA CREW INFO
-    axios.get(baseUrl + "/api/budacrewinfo/63ffcc5778b0d2ecd592bcce")
+    axios.get("http://localhost:8000/api/budacrewinfo/63ffcc5778b0d2ecd592bcce")
       .then(res => {
         setSession1Date(res.data.session1Date)
         setSession1Tuition(res.data.session1Tuition)
@@ -240,7 +240,7 @@ function App() {
       })
 
     //BUDA CREW MEMBER INFO
-    axios.get(baseUrl + "/api/budacrewmemberinfo/640036108a05725938a87006")
+    axios.get("http://localhost:8000/api/budacrewmemberinfo/640036108a05725938a87006")
       .then(res => {
         setMemberTitle(res.data.memberTitle)
         setUpcomingEventsInfo(res.data.upcomingEventsInfo)
@@ -255,7 +255,7 @@ function App() {
       })
 
     //ABOUT ME IMAGE BASE64
-    axios.get(baseUrl + '/api/aboutmeimage/64027ad06b1988b83080eb7f')
+    axios.get('http://localhost:8000/api/aboutmeimage/64027ad06b1988b83080eb7f')
       .then(res => {
         setAboutMeImage(res.data.aboutMeImage)
       })
@@ -264,7 +264,7 @@ function App() {
       })
 
     //ABOUT BUDA IMAGE BASE64
-    axios.get(baseUrl + '/api/aboutbudaimage/6402a78b452c5a04826234ca')
+    axios.get('http://localhost:8000/api/aboutbudaimage/6402a78b452c5a04826234ca')
       .then(res => {
         setAboutBudaImage(res.data.aboutBudaImage)
       })
@@ -273,7 +273,7 @@ function App() {
       })
 
     //ABOUT INFO BANNER IMAGE BASE64
-    axios.get(baseUrl + '/api/aboutinfobanner/6403c5642309f12867c2f6c1')
+    axios.get('http://localhost:8000/api/aboutinfobanner/6403c5642309f12867c2f6c1')
       .then(res => {
         setAboutInfoBannerImg(res.data.aboutInfoBannerImg)
       })
@@ -282,7 +282,7 @@ function App() {
       })
 
     //ABOUT INFO BANNER VIDEO BASE64
-    axios.get(baseUrl + '/api/aboutinfobannervid/6403c81b58556ea0422468ab')
+    axios.get('http://localhost:8000/api/aboutinfobannervid/6403c81b58556ea0422468ab')
       .then(res => {
         setAboutInfoBannerVid(res.data.aboutInfoBannerVid)
       })
@@ -291,7 +291,7 @@ function App() {
       })
 
     //ABOUT BANNER VIDEO OR IMAGE TRACKER
-    axios.get(baseUrl + '/api/aboutbannervidorimg/6403cac55b9ed745d8260490')
+    axios.get('http://localhost:8000/api/aboutbannervidorimg/6403cac55b9ed745d8260490')
       .then(res => {
         setAboutBannerVidOrImg(res.data.aboutBannerVidOrImg)
       })
@@ -300,7 +300,7 @@ function App() {
       })
 
     //BUDA RATES BANNER IMAGE BASE64
-    axios.get(baseUrl + '/api/budaratesbanner/6403ac41050d9afc0eac3c3e')
+    axios.get('http://localhost:8000/api/budaratesbanner/6403ac41050d9afc0eac3c3e')
       .then(res => {
         setBudaRatesBannerImage(res.data.budaRatesBannerImage)
       })
@@ -308,7 +308,7 @@ function App() {
         console.log(err)
       })
     //BUDA RATES BANNER VIDEO BASE64
-    axios.get(baseUrl + '/api/budaratesbannervideo/6403ae7c72725433143e5f1f')
+    axios.get('http://localhost:8000/api/budaratesbannervideo/6403ae7c72725433143e5f1f')
       .then(res => {
         setBudaRatesBannerVideo(res.data.budaRatesBannerVideo)
       })
@@ -316,7 +316,7 @@ function App() {
         console.log(err)
       })
     //RATES BANNER VIDEO OR IMAGE TRACKER
-    axios.get(baseUrl + '/api/ratesbannervidorimg/6403b80f9ec53042773d7450')
+    axios.get('http://localhost:8000/api/ratesbannervidorimg/6403b80f9ec53042773d7450')
       .then(res => {
         setRatesBannerVidOrImg(res.data.ratesBannerVidOrImg)
       })
@@ -325,7 +325,7 @@ function App() {
       })
 
     //SUMMER BANNER IMAGE
-    axios.get(baseUrl + '/api/summerbannerimg/6404e45fe889de2a637a05f7')
+    axios.get('http://localhost:8000/api/summerbannerimg/6404e45fe889de2a637a05f7')
       .then(res => {
         setSummerBannerImg(res.data.summerBannerImg)
       })
@@ -334,7 +334,7 @@ function App() {
       })
 
     //SUMMER BANNER VIDEO
-    axios.get(baseUrl + '/api/summerbannervid/6404e6c383edfcb691afce47')
+    axios.get('http://localhost:8000/api/summerbannervid/6404e6c383edfcb691afce47')
       .then(res => {
         setSummerBannerVid(res.data.summerBannerVid)
       })
@@ -342,7 +342,7 @@ function App() {
         console.log(err)
       })
     //SUMMER BANNER VIDEO OR IMAGE TRACKER
-    axios.get(baseUrl + '/api/summerbannervidorimg/6404e858e50d41ae5e663a30')
+    axios.get('http://localhost:8000/api/summerbannervidorimg/6404e858e50d41ae5e663a30')
       .then(res => {
         setSummerBannerVidOrImg(res.data.summerBannerVidOrImg)
       })
@@ -351,7 +351,7 @@ function App() {
       })
 
     //SUMMER MAIN IMAGE 
-    axios.get(baseUrl + '/api/summermainimg/6408eb04ebee3285b5743758')
+    axios.get('http://localhost:8000/api/summermainimg/6408eb04ebee3285b5743758')
       .then(res => {
         setSummerMainImg(res.data.summerMainImg)
       })
@@ -359,7 +359,7 @@ function App() {
         console.log(err)
       })
     //SUMMER IMAGE 2  
-    axios.get(baseUrl + '/api/summerimg2/6408eb18ebee3285b574375b')
+    axios.get('http://localhost:8000/api/summerimg2/6408eb18ebee3285b574375b')
       .then(res => {
         setSummerImg2(res.data.summerImg2)
       })
@@ -367,7 +367,7 @@ function App() {
         console.log(err)
       })
     //SUMMER IMAGE 3
-    axios.get(baseUrl + '/api/summerimg3/6408eb24ebee3285b574375e')
+    axios.get('http://localhost:8000/api/summerimg3/6408eb24ebee3285b574375e')
       .then(res => {
         setSummerImg3(res.data.summerImg3)
       })
@@ -377,7 +377,7 @@ function App() {
 
 
     //SESSION BANNER IMAGE 
-    axios.get(baseUrl + '/api/sessionbannerimg/64062b1c7a2c450f34c661e9')
+    axios.get('http://localhost:8000/api/sessionbannerimg/64062b1c7a2c450f34c661e9')
       .then(res => {
         setSessionBannerImg(res.data.sessionBannerImg)
       })
@@ -385,7 +385,7 @@ function App() {
         console.log(err)
       })
     //SESSION BANNER VIDEO 
-    axios.get(baseUrl + '/api/sessionbannervid/64062b367a2c450f34c661ec')
+    axios.get('http://localhost:8000/api/sessionbannervid/64062b367a2c450f34c661ec')
       .then(res => {
         setSessionBannerVid(res.data.sessionBannerVid)
       })
@@ -393,7 +393,7 @@ function App() {
         console.log(err)
       })
     //SESSION BANNER VIDEO OR IMAGE TRACKER
-    axios.get(baseUrl + '/api/sessionbannervidorimg/64062b477a2c450f34c661ee')
+    axios.get('http://localhost:8000/api/sessionbannervidorimg/64062b477a2c450f34c661ee')
       .then(res => {
         setSessionBannerVidOrImg(res.data.sessionBannerVidOrImg)
       })
@@ -401,7 +401,7 @@ function App() {
         console.log(err)
       })
     //SESSION MAIN IMAGE 
-    axios.get(baseUrl + '/api/sessionmainimg/6408f4688052cc6be08ed98a')
+    axios.get('http://localhost:8000/api/sessionmainimg/6408f4688052cc6be08ed98a')
       .then(res => {
         setSessionMainImg(res.data.sessionMainImg)
       })
@@ -409,7 +409,7 @@ function App() {
         console.log(err)
       })
     //SESSION IMAGE 2 
-    axios.get(baseUrl + '/api/sessionimg2/6408f4778052cc6be08ed98c')
+    axios.get('http://localhost:8000/api/sessionimg2/6408f4778052cc6be08ed98c')
       .then(res => {
         setSessionImg2(res.data.sessionImg2)
       })
@@ -417,7 +417,7 @@ function App() {
         console.log(err)
       })
     //SESSION IMAGE 3 
-    axios.get(baseUrl + '/api/sessionimg3/6408f47f8052cc6be08ed98e')
+    axios.get('http://localhost:8000/api/sessionimg3/6408f47f8052cc6be08ed98e')
       .then(res => {
         setSessionImg3(res.data.sessionImg3)
       })
@@ -426,7 +426,7 @@ function App() {
       })
 
     //GALLERY BANNER IMAGE 
-    axios.get(baseUrl + '/api/gallerybannerimg/64066082c580e625b8639818')
+    axios.get('http://localhost:8000/api/gallerybannerimg/64066082c580e625b8639818')
       .then(res => {
         setGalleryBannerImg(res.data.galleryBannerImg)
       })
@@ -435,7 +435,7 @@ function App() {
       })
 
     //GALLERY BANNER VIDEO
-    axios.get(baseUrl + '/api/gallerybannervid/64066145e628c7b9b066dee3')
+    axios.get('http://localhost:8000/api/gallerybannervid/64066145e628c7b9b066dee3')
       .then(res => {
         setGalleryBannerVid(res.data.galleryBannerVid)
       })
@@ -444,7 +444,7 @@ function App() {
       })
 
     //GALLERY BANNER VIDEO OR IMAGE TRACKER
-    axios.get(baseUrl + '/api/gallerybannervidorimg/64066155e628c7b9b066dee5')
+    axios.get('http://localhost:8000/api/gallerybannervidorimg/64066155e628c7b9b066dee5')
       .then(res => {
         setGalleryBannerVidOrImg(res.data.galleryBannerVidOrImg)
       })
@@ -453,7 +453,7 @@ function App() {
       })
 
     //CREW BANNER IMAGE 
-    axios.get(baseUrl + '/api/crewbannerimg/640671eb024ae5b9309208ab')
+    axios.get('http://localhost:8000/api/crewbannerimg/640671eb024ae5b9309208ab')
       .then(res => {
         setCrewBannerImg(res.data.crewBannerImg)
       })
@@ -461,7 +461,7 @@ function App() {
         console.log(err)
       })
     //CREW BANNER VIDEO 
-    axios.get(baseUrl + '/api/crewbannervid/640671f8024ae5b9309208ad')
+    axios.get('http://localhost:8000/api/crewbannervid/640671f8024ae5b9309208ad')
       .then(res => {
         setCrewBannerVid(res.data.crewBannerVid)
       })
@@ -469,7 +469,7 @@ function App() {
         console.log(err)
       })
     //CREW BANNER VIDEO OR IMAGE TRACKER
-    axios.get(baseUrl + '/api/crewbannervidorimg/64067203024ae5b9309208af')
+    axios.get('http://localhost:8000/api/crewbannervidorimg/64067203024ae5b9309208af')
       .then(res => {
         setCrewBannerVidOrImg(res.data.crewBannerVidOrImg)
       })
@@ -479,7 +479,7 @@ function App() {
 
 
     //MEMBER BANNER IMAGE 
-    axios.get(baseUrl + '/api/memberbannerimg/64079bd924657d47be763a70')
+    axios.get('http://localhost:8000/api/memberbannerimg/64079bd924657d47be763a70')
       .then(res => {
         setMemberBannerImg(res.data.memberBannerImg)
       })
@@ -487,7 +487,7 @@ function App() {
         console.log(err)
       })
     //MEMBER BANNER VIDEO
-    axios.get(baseUrl + '/api/memberbannervid/64079be224657d47be763a72')
+    axios.get('http://localhost:8000/api/memberbannervid/64079be224657d47be763a72')
       .then(res => {
         setMemberBannerVid(res.data.memberBannerVid)
       })
@@ -495,7 +495,7 @@ function App() {
         console.log(err)
       })
     //MEMBER BANNER VIDEO OR IMAGE TRACKER 
-    axios.get(baseUrl + '/api/memberbannervidorimg/64079bee24657d47be763a74')
+    axios.get('http://localhost:8000/api/memberbannervidorimg/64079bee24657d47be763a74')
       .then(res => {
         setMemberBannerVidOrImg(res.data.memberBannerVidOrImg)
       })
@@ -504,7 +504,7 @@ function App() {
       })
 
     //LANDING PAGE MAIN IMG
-    axios.get(baseUrl + '/api/landingpagemainimg/6407e14c0664c1b35c2630da')
+    axios.get('http://localhost:8000/api/landingpagemainimg/6407e14c0664c1b35c2630da')
       .then(res => {
         setLandingPageMainImg(res.data.landingPageMainImg)
       })
@@ -512,7 +512,7 @@ function App() {
         console.log(err)
       })
     //LANDING PAGE CARD 1
-    axios.get(baseUrl + '/api/landingpagecard1/6407e1640664c1b35c2630dd')
+    axios.get('http://localhost:8000/api/landingpagecard1/6407e1640664c1b35c2630dd')
       .then(res => {
         setLandingPageCard1(res.data.landingPageCard1)
       })
@@ -520,7 +520,7 @@ function App() {
         console.log(err)
       })
     //LANDING PAGE CARD 2
-    axios.get(baseUrl + '/api/landingpagecard2/6407e1710664c1b35c2630e0')
+    axios.get('http://localhost:8000/api/landingpagecard2/6407e1710664c1b35c2630e0')
       .then(res => {
         setLandingPageCard2(res.data.landingPageCard2)
       })
@@ -528,7 +528,7 @@ function App() {
         console.log(err)
       })
     //LANDING PAGE CARD 3
-    axios.get(baseUrl + '/api/landingpagecard3/6407e17d0664c1b35c2630e3')
+    axios.get( 'http://localhost:8000/api/landingpagecard3/6407e17d0664c1b35c2630e3')
       .then(res => {
         setLandingPageCard3(res.data.landingPageCard3)
       })
@@ -536,7 +536,7 @@ function App() {
         console.log(err)
       })
     //LANDING PAGE VID 1
-    axios.get(baseUrl + '/api/landingpagevid1/6407e18e0664c1b35c2630e6')
+    axios.get( 'http://localhost:8000/api/landingpagevid1/6407e18e0664c1b35c2630e6')
       .then(res => {
         setLandingPageVid1(res.data.landingPageVid1)
       })
@@ -544,7 +544,7 @@ function App() {
         console.log(err)
       })
     //LANDING PAGE VID 2 
-    axios.get(baseUrl + '/api/landingpagevid2/6407e1960664c1b35c2630e8')
+    axios.get('http://localhost:8000/api/landingpagevid2/6407e1960664c1b35c2630e8')
       .then(res => {
         setLandingPageVid2(res.data.landingPageVid2)
       })
@@ -554,7 +554,7 @@ function App() {
 
 
     //MEMBER IMG
-    axios.get(baseUrl + '/api/memberImg/6409506ad7e82977ba97852e')
+    axios.get('http://localhost:8000/api/memberImg/6409506ad7e82977ba97852e')
       .then(res => {
         setMemberImg(res.data.memberImg)
       })
@@ -562,7 +562,7 @@ function App() {
         console.log(err)
       })
     //BUDA CREW IMG
-    axios.get(baseUrl + '/api/budacrewimg/640954b6ee04f09798d82b26')
+    axios.get( 'http://localhost:8000/api/budacrewimg/640954b6ee04f09798d82b26')
       .then(res => {
         setBudaCrewImg(res.data.budaCrewImg)
       })
@@ -571,7 +571,7 @@ function App() {
       })
 
     //GALLERY VIDS
-    axios.get(baseUrl + '/api/galleryvids')
+    axios.get( 'http://localhost:8000/api/galleryvids')
       .then(res => {
         setGalleryVidsList(res.data)
       })
@@ -580,7 +580,7 @@ function App() {
       })
 
     //GALLERY IMGS
-    axios.get(baseUrl + '/api/galleryimgs')
+    axios.get('http://localhost:8000/api/galleryimgs')
       .then(res => {
         setGalleryImgsList(res.data)
       })
@@ -589,7 +589,7 @@ function App() {
       })
 
   }, [])
-
+console.log("url is", baseUrl)
   return (
     <div className="App">
       {!tracker ? <BudaNavbar /> : <AdminNavbar />}

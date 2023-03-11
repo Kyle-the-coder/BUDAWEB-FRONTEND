@@ -37,7 +37,7 @@ const AdminRatesPage = (props) => {
     // HANDLE BUDA RATES
     const handleSubmitBudaRates = (e) => {
         e.preventDefault();
-        axios.put(baseUrl + '/api/budarates/63fd6216a5f556178ab5ed83', { rate1, rate2 })
+        axios.put('http://localhost:8000/api/budarates/63fd6216a5f556178ab5ed83', { rate1, rate2 })
             .then(res => {
                 console.log(res)
                 setBudaRatesEdited(true)
@@ -52,7 +52,7 @@ const AdminRatesPage = (props) => {
     // HANDLE INCLUDES INFO
     const handleSubmitIncludes = (e) => {
         e.preventDefault();
-        axios.put(baseUrl + '/api/budaratesinfo/63fe42dec9fe2eb7d79b0988', { includes })
+        axios.put('http://localhost:8000/api/budaratesinfo/63fe42dec9fe2eb7d79b0988', { includes })
             .then(res => {
                 console.log(res)
                 setBudaRatesInfoEdited(true)
@@ -67,7 +67,7 @@ const AdminRatesPage = (props) => {
     // HANDLE DROP IN PRICE
     const handleSubmitDropIn = (e) => {
         e.preventDefault();
-        axios.put(baseUrl + '/api/budadropin/63fe4a37bb1ada7084a4b897', { dropIn })
+        axios.put('http://localhost:8000/api/budadropin/63fe4a37bb1ada7084a4b897', { dropIn })
             .then(res => {
                 console.log(res)
                 setBudaDropInEdited(true)
@@ -82,12 +82,12 @@ const AdminRatesPage = (props) => {
     //BUDA RATES BANNER IMAGE FORM
     const handleBudaRatesBannerImage = (e) => {
         e.preventDefault()
-        axios.put(baseUrl + '/api/budaratesbanner/6403ac41050d9afc0eac3c3e', { budaRatesBannerImage })
+        axios.put('http://localhost:8000/api/budaratesbanner/6403ac41050d9afc0eac3c3e', { budaRatesBannerImage })
             .then(res => {
                 console.log(res.data)
                 setBudaRatesBannerImageEdited(true)
                 //HANDLE VID OR PIC TRACKER
-                axios.put(baseUrl + '/api/ratesbannervidorimg/6403b80f9ec53042773d7450', { ratesBannerVidOrImg })
+                axios.put('http://localhost:8000/api/ratesbannervidorimg/6403b80f9ec53042773d7450', { ratesBannerVidOrImg })
                     .then(res => {
                         console.log(res.data)
                     })
@@ -105,12 +105,12 @@ const AdminRatesPage = (props) => {
     //BUDA RATES BANNER VIDEO FORM
     const handleBudaRatesBannerVideo = (e) => {
         e.preventDefault()
-        axios.put(baseUrl + '/api/budaratesbannervideo/6403ae7c72725433143e5f1f', { budaRatesBannerVideo })
+        axios.put('http://localhost:8000/api/budaratesbannervideo/6403ae7c72725433143e5f1f', { budaRatesBannerVideo })
             .then(res => {
                 console.log(res.data)
                 setBudaRatesBannerVideoEdited(true)
                 //HANDLE VID OR PIC TRACKER
-                axios.put(baseUrl + '/api/ratesbannervidorimg/6403b80f9ec53042773d7450', { ratesBannerVidOrImg })
+                axios.put('http://localhost:8000/api/ratesbannervidorimg/6403b80f9ec53042773d7450', { ratesBannerVidOrImg })
                     .then(res => {
                         console.log(res.data)
                     })

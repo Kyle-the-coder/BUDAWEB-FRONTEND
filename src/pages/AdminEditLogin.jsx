@@ -29,7 +29,7 @@ const AdminEditLogin = (props) => {
             setErrMsg("passwords don't match")
             setErrTracker(true)
         } else if (password === confirmPassword) {
-            axios.put(baseUrl+'/api/budaadmin/63fd25eec828334db266e621', { userName, password })
+            axios.put('http://localhost:8000/api/budaadmin/63fd25eec828334db266e621', { userName, password })
                 .then(res => {
                     console.log(res)
                     alert("Your admin info has been succesfully edited")
