@@ -54,7 +54,7 @@ const AdminAboutPage = (props) => {
     const handleSubmitAboutMe = (e) => {
         e.preventDefault();
 
-        axios.put('http://localhost:8000/api/budaaboutme/63fd525b3abd1fa6fcfc4c20', { aboutMe })
+        axios.put(baseUrl + '/api/budaaboutme/63fd525b3abd1fa6fcfc4c20', { aboutMe })
             .then(res => {
                 console.log(res)
                 setAboutMeEdited(true)

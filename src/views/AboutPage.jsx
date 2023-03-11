@@ -8,6 +8,7 @@ import { useNavigate } from "react-router-dom"
 const AboutPage = (props) => {
     const { aboutMe, aboutBuda, aboutMeImage, aboutBudaImage, aboutInfoBannerImg, aboutBannerVidOrImg, aboutInfoBannerVid } = props;
     const navigate = useNavigate();
+    const baseUrl = process.env.REACT_APP_BASE_URL
 
     const backOne = () => {
         navigate(-1)
