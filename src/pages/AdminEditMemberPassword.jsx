@@ -27,7 +27,7 @@ const AdminEditMemberPassword = (props) => {
             setErrMsg("passwords don't match")
             setErrTracker(true)
         } else if (password === confirmPassword) {
-            axios.put('http://localhost:8000/api/budacrewadmin/63feff5bfbd1f19da3f899e7', { password })
+            axios.put(baseUrl+'/api/budacrewadmin/63feff5bfbd1f19da3f899e7', { password })
                 .then(res => {
                     console.log(res)
                     alert("Buda Crew member password has been succesfully edited")

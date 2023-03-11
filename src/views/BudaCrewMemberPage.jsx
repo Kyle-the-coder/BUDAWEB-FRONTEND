@@ -10,6 +10,7 @@ const BudaCrewMemberPage = (props) => {
     const { memberTitle, upcomingEventsInfo,
         homeworkInfo, budaCrewInfo, contactPhone,
         memberBannerImg, memberBannerVid, memberBannerVidOrImg, memberImg } = props
+    const baseUrl = process.env.REACT_APP_BASE_URL
 
     const backOne = () => {
         navigate(-1)
@@ -22,7 +23,7 @@ const BudaCrewMemberPage = (props) => {
             navigate("/")
         }
         //BUDA CREW MEMBER MUSIC LIST INFO
-        axios.get("http://localhost:8000/api/budacrewmusic")
+        axios.get(baseUrl + "/api/budacrewmusic")
             .then(res => {
                 console.log(res)
                 setMusicList(res.data)
@@ -31,7 +32,7 @@ const BudaCrewMemberPage = (props) => {
                 console.log(err)
             })
         //BUDA CREW MEMBER VIDEO LIST INFO
-        axios.get("http://localhost:8000/api/budacrewvideo")
+        axios.get(baseUrl + "/api/budacrewvideo")
             .then(res => {
                 setVideoList(res.data)
             })
@@ -111,7 +112,7 @@ const BudaCrewMemberPage = (props) => {
                                         )
                                     })}
                                 </div>
-                            
+
                             </div>
 
                             <div className="rounded-lg sm:w-2/5 w-11/12 h-[900px]flex flex-col items-center border-2 border-black mb-5">

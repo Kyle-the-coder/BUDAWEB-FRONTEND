@@ -18,7 +18,6 @@ const AdminForm = (props) => {
         
         axios.post(baseUrl + '/api/budaadmin/check',{userName, password})
             .then(res=>{
-                console.log(res)
                 if(res.data === "exist"){
                     setLoggedIn(res.data)
                     setTracker(true)

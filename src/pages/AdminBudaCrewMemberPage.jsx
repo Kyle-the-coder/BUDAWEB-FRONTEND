@@ -53,7 +53,7 @@ const AdminBudaCrewMemberPage = (props) => {
     // HANDLE SESSION INFO
     const handleSubmitBudaCrewInfo = (e) => {
         e.preventDefault();
-        axios.put('http://localhost:8000/api/budacrewmemberinfo/640036108a05725938a87006', {
+        axios.put(baseUrl + '/api/budacrewmemberinfo/640036108a05725938a87006', {
             memberTitle, upcomingEventsInfo,
             videoTitle, videoLink,
             homeworkInfo, budaCrewInfo,
@@ -73,11 +73,11 @@ const AdminBudaCrewMemberPage = (props) => {
     // HANDLE VIDEO INFO
     const handleSubmitBudaCrewVideoList = (e) => {
         e.preventDefault();
-        axios.post('http://localhost:8000/api/budacrewvideo', { videoLink, videoTitle })
+        axios.post(baseUrl + '/api/budacrewvideo', { videoLink, videoTitle })
             .then(res => {
                 console.log(res)
                 //BUDA CREW MEMBER VIDEO LIST INFO
-                axios.get(baseUrl+"/api/budacrewvideo")
+                axios.get(baseUrl + "/api/budacrewvideo")
                     .then(res => {
                         setVideoList(res.data)
                     })
@@ -95,11 +95,11 @@ const AdminBudaCrewMemberPage = (props) => {
     // HANDLE MIX INFO
     const handleSubmitBudaCrewMixList = (e) => {
         e.preventDefault();
-        axios.post('http://localhost:8000/api/budacrewmusic', { musicLink, musicTitle })
+        axios.post(baseUrl+'/api/budacrewmusic', { musicLink, musicTitle })
             .then(res => {
                 console.log(res)
                 //BUDA CREW MEMBER MUSIC LIST INFO
-                axios.get(baseUrl+"/api/budacrewmusic")
+                axios.get(baseUrl + "/api/budacrewmusic")
                     .then(res => {
                         console.log(res)
                         setMusicList(res.data)
@@ -117,10 +117,10 @@ const AdminBudaCrewMemberPage = (props) => {
     const handleDeleteOneMusic = (e, id) => {
         e.preventDefault()
         console.log(id)
-        axios.delete('http://localhost:8000/api/budacrewmusic/' + id)
+        axios.delete(baseUrl+'/api/budacrewmusic/' + id)
             .then(res => {
                 //BUDA CREW MEMBER MUSIC LIST INFO
-                axios.get(baseUrl+"/api/budacrewmusic")
+                axios.get(baseUrl + "/api/budacrewmusic")
                     .then(res => {
                         console.log(res)
                         setMusicList(res.data)
@@ -138,11 +138,11 @@ const AdminBudaCrewMemberPage = (props) => {
     const handleDeleteOneVideo = (e, id) => {
         e.preventDefault()
         console.log(id)
-        axios.delete('http://localhost:8000/api/budacrewvideo/' + id)
+        axios.delete(baseUrl+'/api/budacrewvideo/' + id)
             .then(res => {
                 console.log(res)
                 //BUDA CREW MEMBER VIDEO LIST INFO
-                axios.get(baseUrl+"/api/budacrewvideo")
+                axios.get(baseUrl + "/api/budacrewvideo")
                     .then(res => {
                         setVideoList(res.data)
                     })
@@ -158,7 +158,7 @@ const AdminBudaCrewMemberPage = (props) => {
     // HANDLE MEMBER BANNER IMAGE
     const handleSubmitMemberBannerImg = (e) => {
         e.preventDefault();
-        axios.put('http://localhost:8000/api/memberbannerimg/64079bd924657d47be763a70', { memberBannerImg })
+        axios.put(baseUrl+'/api/memberbannerimg/64079bd924657d47be763a70', { memberBannerImg })
             .then(res => {
                 console.log(res)
                 axios.put('http://localhost:8000/api/memberbannervidorimg/64079bee24657d47be763a74', { memberBannerVidOrImg })
@@ -179,10 +179,10 @@ const AdminBudaCrewMemberPage = (props) => {
     // HANDLE MEMBER BANNER VIDEO
     const handleSubmitMemberBannerVid = (e) => {
         e.preventDefault();
-        axios.put('http://localhost:8000/api/memberbannervid/64079be224657d47be763a72', { memberBannerVid })
+        axios.put(baseUrl+'/api/memberbannervid/64079be224657d47be763a72', { memberBannerVid })
             .then(res => {
                 console.log(res)
-                axios.put('http://localhost:8000/api/memberbannervidorimg/64079bee24657d47be763a74', { memberBannerVidOrImg })
+                axios.put(baseUrl+'/api/memberbannervidorimg/64079bee24657d47be763a74', { memberBannerVidOrImg })
                     .then(res => {
                         console.log(res)
                     })
@@ -201,7 +201,7 @@ const AdminBudaCrewMemberPage = (props) => {
     // HANDLE MEMBER IMG
     const handleMemberImg = (e) => {
         e.preventDefault()
-        axios.put('http://localhost:8000/api/memberImg/6409506ad7e82977ba97852e', { memberImg })
+        axios.put(baseUrl+'/api/memberImg/6409506ad7e82977ba97852e', { memberImg })
             .then(res => {
                 setMemberImgEdited(true)
                 const time = setTimeout(() => setMemberImgEdited(false), 2100);

@@ -49,7 +49,7 @@ const AdminEditBudaCrewPage = (props) => {
     // HANDLE BUDA CREW INFO
     const handleSubmitBudaCrewInfo1 = (e) => {
         e.preventDefault();
-        axios.put('http://localhost:8000/api/budacrewinfo/63ffcc5778b0d2ecd592bcce', {
+        axios.put(baseUrl+'/api/budacrewinfo/63ffcc5778b0d2ecd592bcce', {
             session1Date,
             session1Tuition,
             session1Includes,
@@ -79,7 +79,7 @@ const AdminEditBudaCrewPage = (props) => {
     // HANDLE BUDA CREW INFO
     const handleSubmitBudaCrewInfo2 = (e) => {
         e.preventDefault();
-        axios.put('http://localhost:8000/api/budacrewinfo/63ffcc5778b0d2ecd592bcce', {
+        axios.put(baseUrl+'/api/budacrewinfo/63ffcc5778b0d2ecd592bcce', {
             session1Date,
             session1Tuition,
             session1Includes,
@@ -109,10 +109,10 @@ const AdminEditBudaCrewPage = (props) => {
     // HANDLE SESSION BANNER IMAGE
     const handleSubmitCrewBannerImg = (e) => {
         e.preventDefault();
-        axios.put('http://localhost:8000/api/crewbannerimg/640671eb024ae5b9309208ab', { crewBannerImg })
+        axios.put(baseUrl+'/api/crewbannerimg/640671eb024ae5b9309208ab', { crewBannerImg })
             .then(res => {
                 console.log(res)
-                axios.put('http://localhost:8000/api/crewbannervidorimg/64067203024ae5b9309208af', { crewBannerVidOrImg })
+                axios.put(baseUrl+'/api/crewbannervidorimg/64067203024ae5b9309208af', { crewBannerVidOrImg })
                     .then(res => {
                         console.log(res)
                     })
@@ -130,10 +130,10 @@ const AdminEditBudaCrewPage = (props) => {
     // HANDLE SESSION BANNER IMAGE
     const handleSubmitCrewBannerVid = (e) => {
         e.preventDefault();
-        axios.put('http://localhost:8000/api/crewbannervid/640671f8024ae5b9309208ad', { crewBannerVid })
+        axios.put(baseUrl+'/api/crewbannervid/640671f8024ae5b9309208ad', { crewBannerVid })
             .then(res => {
                 console.log(res)
-                axios.put('http://localhost:8000/api/crewbannervidorimg/64067203024ae5b9309208af', { crewBannerVidOrImg })
+                axios.put(baseUrl+'/api/crewbannervidorimg/64067203024ae5b9309208af', { crewBannerVidOrImg })
                     .then(res => {
                         console.log(res)
                     })
@@ -152,7 +152,7 @@ const AdminEditBudaCrewPage = (props) => {
     // HANDLE BUDA CREW INFO
     const handleSubmitBudaCrewImg = (e) => {
         e.preventDefault();
-        axios.put('http://localhost:8000/api/budacrewimg/640954b6ee04f09798d82b26', { budaCrewImg })
+        axios.put(baseUrl+'/api/budacrewimg/640954b6ee04f09798d82b26', { budaCrewImg })
             .then(res => {
                 console.log(res)
                 setBudaCrewImgEdited(true)

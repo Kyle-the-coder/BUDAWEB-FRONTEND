@@ -40,7 +40,7 @@ const AdminSummerPage = (props) => {
     // HANDLE INCLUDES INFO
     const handleSubmitSummerInfo = (e) => {
         e.preventDefault();
-        axios.put('http://localhost:8000/api/budasummerinfo/63fe5383578d73e2dc2a012b', { summerTitle, summerContent, regLink })
+        axios.put(baseUrl+'/api/budasummerinfo/63fe5383578d73e2dc2a012b', { summerTitle, summerContent, regLink })
             .then(res => {
                 console.log(res)
                 setsummerInfoEdited(true)
@@ -53,10 +53,10 @@ const AdminSummerPage = (props) => {
     // HANDLE SUMMER BANNER IMG
     const handleSummerBannerImg = (e) => {
         e.preventDefault();
-        axios.put('http://localhost:8000/api/summerbannerimg/6404e45fe889de2a637a05f7', { summerBannerImg })
+        axios.put(baseUrl+'/api/summerbannerimg/6404e45fe889de2a637a05f7', { summerBannerImg })
             .then(res => {
                 console.log(res)
-                axios.put('http://localhost:8000/api/summerbannervidorimg/6404e858e50d41ae5e663a30', { summerBannerVidOrImg })
+                axios.put(baseUrl+'/api/summerbannervidorimg/6404e858e50d41ae5e663a30', { summerBannerVidOrImg })
                     .then(res => {
                         console.log(res)
                     })
@@ -73,10 +73,10 @@ const AdminSummerPage = (props) => {
     // HANDLE SUMMER BANNER VID
     const handleSummerBannerVid = (e) => {
         e.preventDefault();
-        axios.put('http://localhost:8000/api/summerbannervid/6404e6c383edfcb691afce47', { summerBannerVid })
+        axios.put(baseUrl+'/api/summerbannervid/6404e6c383edfcb691afce47', { summerBannerVid })
             .then(res => {
                 console.log(res)
-                axios.put('http://localhost:8000/api/summerbannervidorimg/6404e858e50d41ae5e663a30', { summerBannerVidOrImg })
+                axios.put(baseUrl+'/api/summerbannervidorimg/6404e858e50d41ae5e663a30', { summerBannerVidOrImg })
                     .then(res => {
                         console.log(res)
                     })
@@ -93,7 +93,7 @@ const AdminSummerPage = (props) => {
     // HANDLE SUMMER MAIN IMG
     const handleSubmitSummerMainImg = (e) => {
         e.preventDefault();
-        axios.put('http://localhost:8000/api/summermainimg/6408eb04ebee3285b5743758', { summerMainImg  })
+        axios.put(baseUrl+'/api/summermainimg/6408eb04ebee3285b5743758', { summerMainImg  })
             .then(res => {
                 console.log(res)
                 setSummerMainImgEdited(true)
@@ -107,7 +107,7 @@ const AdminSummerPage = (props) => {
     // HANDLE SUMMER IMG 2
     const handleSubmitSummerImg2 = (e) => {
         e.preventDefault();
-        axios.put('http://localhost:8000/api/summerimg2/6408eb18ebee3285b574375b', { summerImg2 })
+        axios.put(baseUrl+'/api/summerimg2/6408eb18ebee3285b574375b', { summerImg2 })
             .then(res => {
                 console.log(res)
                 setSummerImg2Edited(true)
@@ -122,7 +122,7 @@ const AdminSummerPage = (props) => {
     // HANDLE SUMMER IMG 3
     const handleSubmitSummerImg3 = (e) => {
         e.preventDefault();
-        axios.put('http://localhost:8000/api/summerimg3/6408eb24ebee3285b574375e', {  summerImg3 })
+        axios.put(baseUrl+'/api/summerimg3/6408eb24ebee3285b574375e', {  summerImg3 })
             .then(res => {
                 console.log(res)
                 setSummerImg3Edited(true)
