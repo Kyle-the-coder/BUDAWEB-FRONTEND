@@ -4,6 +4,7 @@ import fbIcon from "../assets/images/facebook.png"
 import budaLogo from "../assets/images/budaLogo.png"
 import { useState } from "react";
 import MapComponent from "./BudaMap";
+import { Link } from "react-router-dom";
 
 const ContactBar = () => {
     const [info, setInfo] = useState([]);
@@ -68,7 +69,7 @@ const ContactBar = () => {
             <section className="w-full bg-white  border-t-2 p-5 border-black flex flex-col items-center justify-center">
                 <h1 >Thank You for choosing BUDA!</h1>
                 <h2 >Copyright © Bianca Zogbi All rights reserved.</h2>
-                <p><a href="/budaAdmin">Admin</a></p>
+                <p><Link to="/budaAdmin">Admin</Link></p>
             </section>
         </div>
     )
